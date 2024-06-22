@@ -1,0 +1,29 @@
+---
+
+---
+
+
+	<main class="flex my-auto text-center justify-center items-center flex-col">
+	  <h1 class="text-7xl mt-3 mb-10">
+				<span class="text-red-50">`Design Pattern`.</span>
+				<span class="italic">apply()</span>
+		</h1>
+		
+
+		
+		<div class="flex flex-col gap-2 w-full  justify-center items-center">
+			<input id="nounify-subject" type="text" placeholder="Enter your struct/model/type here" class="input w-full max-w-xl" />
+			<div class="flex gap-2">
+        <button id="nounify-action-button" class="btn">Enterprise-ify</button>
+        <button id="nounify-reset" class="btn">Reset</button>
+      </div>
+		</div>
+    <h2 id="nounify-stage" class="w-1/2 text-4xl text-bold italic mb-2 text-wrap truncate break-words overflow-ellipsis">
+		</h2>
+	</main>
+<script>
+	import {nounifyInit} from  '../scripts/nounify';
+
+	nounifyInit();
+</script>
+
