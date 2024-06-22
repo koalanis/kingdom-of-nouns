@@ -53,6 +53,21 @@ export function nounifyInit() {
     resetButton.addEventListener("click", (event: Event) => {
       nounSoupState = emptyNounSoupState();
       nounifyRender(nounSoupState)
+      const subjectInput = document.getElementById("nounify-subject") as HTMLInputElement;
+      if(subjectInput) {
+          console.log("about to update input")  
+        subjectInput.value  = initialSubject;
+        }
+      })
+  }
+
+  const copyButton = document.getElementById("nounify-copy");
+  if (copyButton) {
+    copyButton.addEventListener("click", (event: Event) => {
+      const subjectInput = document.getElementById("nounify-stage") as HTMLHeadingElement;
+      if(subjectInput) {
+        navigator.clipboard.writeText(subjectInput.innerText);
+      }
     })
   }
 }
