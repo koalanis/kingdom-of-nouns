@@ -1,3 +1,4 @@
+console.log("hello")
 const initialSubject: string = "Posts";
 
 const PREFIX_BANK = ["ContextAware", "Generic", "Abstract", "Instantiable"];
