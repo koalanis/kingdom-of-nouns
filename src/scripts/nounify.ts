@@ -32,7 +32,7 @@ export function nounifyInit() {
   const subjectInput = document.getElementById("nounify-subject");
   if (subjectInput) {
     subjectInput.setAttribute("value", initialSubject)
-    subjectInput.addEventListener("input", (event: InputEvent) => {
+    subjectInput.addEventListener("input", (event: Event) => {
       const noun = (event.target as HTMLInputElement).value || "";
       nounSoupState.subject = noun
       nounifyRender(nounSoupState)
